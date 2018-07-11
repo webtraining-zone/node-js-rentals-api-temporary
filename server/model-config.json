@@ -34,5 +34,13 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Vehicle": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Manufacturer": {
+    "dataSource": "db",
+    "public": true
   }
 }

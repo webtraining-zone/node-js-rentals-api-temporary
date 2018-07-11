@@ -1,0 +1,57 @@
+{
+  "name": "Vehicle",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "model": {
+      "type": "string",
+      "required": true
+    },
+    "year": {
+      "type": "number",
+      "required": true
+    },
+    "price": {
+      "type": "number",
+      "required": true
+    },
+    "link": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string",
+      "required": true
+    },
+    "rented": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "thumbnail": {
+      "type": "string",
+      "required": true
+    },
+    "created_at": {
+      "type": "date"
+    },
+    "updated_at": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "manufacturer": {
+      "type": "belongsTo",
+      "model": "Manufacturer",
+      "foreignKey": "manufacturerId",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
