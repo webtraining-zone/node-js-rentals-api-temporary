@@ -36,11 +36,11 @@
     "public": false
   },
   "Vehicle": {
-    "dataSource": "db",
+    "dataSource": "mysql",
     "public": true
   },
   "Manufacturer": {
-    "dataSource": "db",
+    "dataSource": "mysql",
     "public": true
   }
 }

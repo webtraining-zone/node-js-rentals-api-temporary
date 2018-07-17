@@ -1,0 +1,26 @@
+{
+  "ids": {
+    "User": 1,
+    "AccessToken": 1,
+    "ACL": 1,
+    "RoleMapping": 1,
+    "Role": 1,
+    "Vehicle": 2,
+    "Manufacturer": 4
+  },
+  "models": {
+    "User": {},
+    "AccessToken": {},
+    "ACL": {},
+    "RoleMapping": {},
+    "Role": {},
+    "Vehicle": {
+      "1": "{\"model\":\"GT-R\",\"year\":2018,\"price\":250,\"link\":\"http://en.wikipedia.org/wiki/Nissan_Gt-r\",\"image\":\"Nissan-GT-R.jpg\",\"rented\":true,\"thumbnail\":\"Nissan-GT-R-thumbnail.jpg\",\"created_at\":\"2018-05-25T04:22:20.000Z\",\"updated_at\":\"2018-05-25T04:22:20.000Z\",\"manufacturerId\":1,\"id\":1}"
+    },
+    "Manufacturer": {
+      "1": "{\"name\":\"Nissan\",\"description\":\"Nissan\",\"created_at\":\"2018-07-11T02:26:44.816Z\",\"updated_at\":\"2018-07-11T02:26:44.816Z\",\"id\":1}",
+      "2": "{\"name\":\"Honda\",\"description\":\"Honda\",\"created_at\":\"2018-07-11T02:26:44.816Z\",\"updated_at\":\"2018-07-11T02:26:44.816Z\",\"id\":2}",
+      "3": "{\"name\":\"Subaru\",\"description\":\"Subaru\",\"created_at\":\"2018-07-11T02:26:44.816Z\",\"updated_at\":\"2018-07-11T02:26:44.816Z\",\"id\":3}"
+    }
+  }
+}

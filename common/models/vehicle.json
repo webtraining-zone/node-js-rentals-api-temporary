@@ -3,7 +3,10 @@
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
-    "validateUpsert": true
+    "validateUpsert": true,
+    "mysql": {
+      "table": "vehicles"
+    }
   },
   "properties": {
     "model": {
@@ -39,6 +42,12 @@
     },
     "updated_at": {
       "type": "date"
+    },
+    "manufacturerId": {
+      "type": "number",
+      "mysql": {
+        "columnName": "manufacturer_id"
+      }
     }
   },
   "validations": [],
