@@ -1,0 +1,33 @@
+{
+  "name": "Customer",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true,
+    "mysql": {
+      "table": "User"
+    }
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "vehicles": {
+      "type": "hasAndBelongsToMany",
+      "model": "Vehicle",
+      "foreignKey": "vehicleId",
+      "through": "Rental",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

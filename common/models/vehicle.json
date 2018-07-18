@@ -8,6 +8,9 @@
       "table": "vehicles"
     }
   },
+  "scope": {
+    "include" : "manufacturer"
+  },
   "properties": {
     "model": {
       "type": "string",
@@ -59,19 +62,22 @@
       "options": {
         "nestRemoting": true
       }
+    },
+    "customers": {
+      "type": "hasMany",
+      "model": "Customer",
+      "foreignKey": "customerId",
+      "options": {
+        "nestRemoting": true
+      },
+      "through": "Rental"
     }
   },
   "acls": [
     {
-      "accessType": "*",
-      "principalType": "ROLE",
-      "principalId": "$everyone",
-      "permission": "DENY"
-    },
-    {
       "accessType": "READ",
       "principalType": "ROLE",
-      "principalId": "$authenticated",
+      "principalId": "$unauthenticated",
       "permission": "ALLOW"
     },
     {
